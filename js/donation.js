@@ -35,29 +35,8 @@ document.getElementById('btn-donation1')
             const dateTime = new Date();
 
             // Show the modal
-            const donateModal = document.getElementById('modal');
-            donateModal.style.display = "block";
-
-            // Modal close functionality
-            const btnCloseModal = document.getElementById('btn-modal_close');
-            const span = document.getElementsByClassName("close")[0];
-
-            // Set up event listeners for closing the modal
-            span.onclick = function () {
-                donateModal.style.display = "none";
-            };
-
-            btnCloseModal.onclick = function () {
-                donateModal.style.display = "none";
-            };
-
-            // Close modal when clicking outside of it
-            window.onclick = function (event) {
-                if (event.target === donateModal) {
-                    donateModal.style.display = "none";
-                }
-            };
-
+            const btn = document.getElementById('btn-modal');
+            btn.click();
 
 
 
@@ -85,7 +64,7 @@ document.getElementById('btn-donation1')
     })
 
 
-    
+
 // For Donation 2
 document.getElementById('btn-donation2')
     .addEventListener('click', function (event) {
